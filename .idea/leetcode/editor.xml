@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="$PROJECT_DIR$/../../leetCode/leetcode/editor/cn/[1043]分隔数组以得到最大和.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../leetCode/leetcode/editor/cn/doc/content/[1043]分隔数组以得到最大和.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1043" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../leetCode/leetcode/editor/cn/[1043]分隔数组以得到最大和.go" />
+              <option name="titleSlug" value="partition-array-for-maximum-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetCode/leetcode/editor/cn/[1049]最后一块石头的重量 II.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../leetCode/leetcode/editor/cn/doc/content/[1049]最后一块石头的重量 II.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1049" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../leetCode/leetcode/editor/cn/[1049]最后一块石头的重量 II.go" />
+              <option name="titleSlug" value="last-stone-weight-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetCode/leetcode/editor/cn/[474]一和零.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../leetCode/leetcode/editor/cn/doc/content/[474]一和零.md" />
+              <option name="frontendQuestionId" value="leetcode.cn474" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../leetCode/leetcode/editor/cn/[474]一和零.go" />
+              <option name="titleSlug" value="ones-and-zeroes" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetCode/leetcode/editor/cn/[494]目标和.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../leetCode/leetcode/editor/cn/doc/content/[494]目标和.md" />
+              <option name="frontendQuestionId" value="leetcode.cn494" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../leetCode/leetcode/editor/cn/[494]目标和.go" />
+              <option name="titleSlug" value="target-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetCode/leetcode/editor/cn/[剑指 Offer II 007]数组中和为 0 的三个数.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../leetCode/leetcode/editor/cn/doc/content/[剑指 Offer II 007]数组中和为 0 的三个数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn剑指 Offer II 007" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../leetCode/leetcode/editor/cn/[剑指 Offer II 007]数组中和为 0 的三个数.go" />
+              <option name="titleSlug" value="1fGaJU" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetCode/leetcode/editor/cn/[剑指 Offer II 008]和大于等于 target 的最短子数组.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../../leetCode/leetcode/editor/cn/doc/content/[剑指 Offer II 008]和大于等于 target 的最短子数组.md" />
+              <option name="frontendQuestionId" value="leetcode.cn剑指 Offer II 008" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../../leetCode/leetcode/editor/cn/[剑指 Offer II 008]和大于等于 target 的最短子数组.go" />
+              <option name="titleSlug" value="2VG8Kg" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
