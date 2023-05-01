@@ -4,7 +4,7 @@ $(function(){
 var app={
     init:function(){
         this.getCaptcha()
-        this.captchaImgChage()
+        this.captchaImgChange()
     },
     getCaptcha:function(){
         $.get("/admin/captcha?t="+Math.random(),function(response){
@@ -13,7 +13,7 @@ var app={
             $("#captchaImg").attr("src",response.captchaImage)
         })
     },
-    captchaImgChage:function(){
+    captchaImgChange:function(){
         var that=this;
         $("#captchaImg").click(function(){
             that.getCaptcha()
