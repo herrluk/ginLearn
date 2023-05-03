@@ -1,6 +1,6 @@
 package models
 
-//https://gorm.io/zh_CN/docs/connecting_to_the_database.html
+// https://gorm.io/zh_CN/docs/connecting_to_the_database.html
 import (
 	"fmt"
 	"os"
@@ -13,8 +13,8 @@ import (
 var DB *gorm.DB
 var err error
 
-func init() {
-	//读取.ini里面的数据库配置
+func Init() {
+	// 读取.ini里面的数据库配置
 
 	config, iniErr := ini.Load("./conf/app.ini")
 	if iniErr != nil {
@@ -31,11 +31,21 @@ func init() {
 	// dsn := "root:123456@tcp(192.168.0.6:3306)/gin?charset=utf8mb4&parseTime=True&loc=Local"
 	dsn := fmt.Sprintf("%v:%v@tcp(%v:%v)/%v?charset=utf8mb4&parseTime=True&loc=Local", user, password, ip, port, database)
 	DB, err = gorm.Open(mysql.Open(dsn), &gorm.Config{
-		QueryFields: true, //打印sql
-		//SkipDefaultTransaction: true, //禁用事务
+		QueryFields: true, // 打印sql
+		// SkipDefaultTransaction: true, //禁用事务
 	})
 	// DB.Debug()
 	if err != nil {
 		fmt.Println(err)
+	} else {
+		fmt.Println("数据库连接成功")
 	}
+
+	err1 := DB.AutoMigrate(&Manager{})
+	if err1 != nil {
+		fmt.Println(err1)
+	} else {
+		fmt.Println("表迁移成功")
+	}
+
 }

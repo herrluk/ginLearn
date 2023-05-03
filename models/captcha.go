@@ -37,7 +37,7 @@ func MakeCaptcha() (id string, b64s string, err error) {
 
 // VerifyCaptcha  验证验证码
 func VerifyCaptcha(id, VerifyValue string) bool {
-	fmt.Println(id, VerifyValue)
+	fmt.Println("输入的验证码：\"", id, VerifyValue, "\"分隔符")
 	if store.Verify(id, VerifyValue, true) {
 		return true
 	}

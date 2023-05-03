@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/gob"
 	"fmt"
 	"github.com/herrluk/goProjectsPractice/ginLearn/models"
 	"github.com/herrluk/goProjectsPractice/ginLearn/routers"
@@ -12,6 +13,7 @@ import (
 )
 
 func main() {
+	models.Init()
 	// 创建一个默认的路由引擎
 	r := gin.Default()
 	// 自定义模板函数  注意要把这个函数放在加载模板前
@@ -27,6 +29,7 @@ func main() {
 	store := cookie.NewStore([]byte("secret111"))
 	// 配置session的中间件 store是前面创建的存储引擎，我们可以替换成其他存储引擎
 	r.Use(sessions.Sessions("mysession", store))
+	gob.Register([]models.Manager{})
 
 	routers.AdminRoutersInit(r)
 

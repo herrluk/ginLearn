@@ -9,7 +9,7 @@ var app={
     getCaptcha:function(){
         $.get("/admin/captcha?t="+Math.random(),function(response){
             console.log(response)
-            $("#captchaId").val(response.captchaId)
+            $("#captchaId").val(response.captchaId) //选择的是id为captchaId
             $("#captchaImg").attr("src",response.captchaImage)
         })
     },
