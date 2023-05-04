@@ -41,11 +41,17 @@ func Init() {
 		fmt.Println("数据库连接成功")
 	}
 
-	err1 := DB.AutoMigrate(&Manager{})
-	if err1 != nil {
-		fmt.Println(err1)
+	err = DB.AutoMigrate(&Manager{})
+	if err != nil {
+		fmt.Println(err)
 	} else {
 		fmt.Println("表迁移成功")
 	}
 
+	err = DB.AutoMigrate(&Role{})
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println("表迁移成功")
+	}
 }

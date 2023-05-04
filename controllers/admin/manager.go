@@ -22,5 +22,6 @@ func (con ManagerController) Edit(c *gin.Context) {
 	c.HTML(http.StatusOK, "admin/manager/edit.html", gin.H{})
 }
 func (con ManagerController) Delete(c *gin.Context) {
-	c.String(http.StatusOK, "-add--文章-")
+	// c.HTML(http.StatusOK, "admin/manager/edit.html", gin.H{})
+
 }

@@ -44,17 +44,17 @@ func (con LoginController) DoLogin(c *gin.Context) {
 			err := session.Save()
 			if err != nil {
 				fmt.Println(err)
-				con.error(c, "session错误", "/admin/login")
+				con.Error(c, "session错误", "/admin/login")
 
 			} else {
-				con.success(c, "登录成功", "/admin")
+				con.Success(c, "登录成功", "/admin")
 
 			}
 		} else {
-			con.error(c, "用户名或密码错误", "/admin/login")
+			con.Error(c, "用户名或密码错误", "/admin/login")
 		}
 	} else {
-		con.error(c, "验证码验证失败", "/admin/login")
+		con.Error(c, "验证码验证失败", "/admin/login")
 	}
 }
 
@@ -79,6 +79,6 @@ func (con LoginController) LoginOut(c *gin.Context) {
 	if err != nil {
 		fmt.Println(err)
 	}
-	con.success(c, "退出登录成功", "/admin/login")
+	con.Success(c, "退出登录成功", "/admin/login")
 
 }
