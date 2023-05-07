@@ -44,14 +44,14 @@ func Init() {
 	err = DB.AutoMigrate(&Manager{})
 	if err != nil {
 		fmt.Println(err)
-	} else {
-		fmt.Println("表迁移成功")
 	}
-
 	err = DB.AutoMigrate(&Role{})
 	if err != nil {
 		fmt.Println(err)
-	} else {
-		fmt.Println("表迁移成功")
+	}
+
+	err = DB.AutoMigrate(&Access{})
+	if err != nil {
+		fmt.Println(err)
 	}
 }
